@@ -1,7 +1,8 @@
 import {  Container, Grid } from '@material-ui/core'
 import React from 'react'
 import ProductCard from './Card'
-import ProductCardList from './db'
+import data from './Data'
+
 
 
 const Content = () => {
@@ -21,7 +22,7 @@ const Content = () => {
         <Grid container spacing={2}>
           
                 
-               {ProductCardList.map(product => getProductCard(product))}
+               {data.products.map(product => getProductCard(product))}
             
             
             

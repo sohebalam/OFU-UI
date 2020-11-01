@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import CardHeader from '@material-ui/core/CardHeader';
 import { Avatar, CardMedia, IconButton } from '@material-ui/core';
 import MoreVertIcon from '@material-ui/icons/MoreVert'
+import Stars from './Stars'
 
 
 
@@ -42,6 +43,7 @@ export default function ProductCard(props) {
       <CardActions>
         <Button size="small">BUY NOW</Button>
         <Button size="small">OFFER</Button>
+        <Stars/>
       </CardActions>
     </Card>
   );
