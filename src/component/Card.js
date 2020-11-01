@@ -13,8 +13,8 @@ import Stars from './Stars'
 
 
 export default function ProductCard(props) {
-  
- 
+
+
   const {avatarSrc, title, subtitle, description, imgSrc} = props
 
   return (
@@ -22,7 +22,7 @@ export default function ProductCard(props) {
          <CardHeader
         avatar={
           <Avatar src={avatarSrc} />
-           
+
         }
         action={
           <IconButton aria-label="settings">
@@ -34,16 +34,17 @@ export default function ProductCard(props) {
       />
       <CardMedia style={{ height: "150px" }} image={imgSrc} />
       <CardContent>
-       
+
         <Typography variant="body2" component="p">
-         
+
           {description}
         </Typography>
       </CardContent>
       <CardActions>
         <Button size="small">BUY NOW</Button>
         <Button size="small">OFFER</Button>
-        <Stars/>
+        {/* Stars */}
+        <Stars/> 
       </CardActions>
     </Card>
   );

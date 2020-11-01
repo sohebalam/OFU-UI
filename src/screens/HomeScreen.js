@@ -1,11 +1,11 @@
 import {  Container, Grid } from '@material-ui/core'
 import React from 'react'
-import ProductCard from './Card'
-import data from './Data'
+import ProductCard from '../component/Card'
+import data from '../component/Data'
 
 
 
-const Content = () => {
+const HomeScreen = () => {
 
     const getProductCard = (product) => {
         
@@ -19,13 +19,15 @@ const Content = () => {
 
     return (
         <Container>
+
+
         <Grid container spacing={2}>
-          
+      
                 
                {data.products.map(product => getProductCard(product))}
             
             
-            
+               
             
             </Grid>
         
@@ -34,4 +36,4 @@ const Content = () => {
     )
 }
 
-export default Content
+export default HomeScreen
